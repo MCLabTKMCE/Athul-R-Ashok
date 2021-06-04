@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="61dp"
+        android:ems="10"
+        android:hint="Enter the first number"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="22dp" />
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number1"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:hint="Enter the second number"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="64dp" />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="362dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/number2"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="20dp"
+        android:text=" RESULT"
+        android:textColor="#DAD5D5"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="126dp" />
+    <Button
+
+        android:id="@+id/add"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/result"
+        android:layout_marginTop="51dp"
+        android:text="+"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="200dp" />
+    <Button
+        android:id="@+id/subtract"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/add"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-59dp"
+        android:layout_toEndOf="@+id/add"
+        android:layout_toRightOf="@+id/add"
+        android:text="-"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="263dp" />
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/subtract"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-60dp"
+        android:layout_toEndOf="@+id/subtract"
+        android:layout_toRightOf="@+id/subtract"
+        android:text="*"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="321dp" />
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/multiply"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-61dp"
+        android:layout_toEndOf="@+id/multiply"
+        android:layout_toRightOf="@+id/multiply"
+        android:text="/"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="385dp" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="362dp"
+        android:layout_height="33dp"
+        android:shadowColor="#050505"
+        android:text="MyCalC"
+        android:textColor="#1D2020"
+        android:textColorHighlight="#1B1A1A"
+        android:textStyle="bold|italic" />
+</RelativeLayout>
